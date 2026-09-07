@@ -1,6 +1,6 @@
 # PCB routing draft
 
-The schematic checkpoint is **26806e6**. The serviceable 100 x 80 mm placement checkpoint is **2561262**. The first routing pass is committed as **73e48d3** (`Start buck converter and DAC PCB routing`). The working board contains a second routing pass.
+The schematic checkpoint is **26806e6**. The serviceable 100 x 80 mm placement checkpoint is **2561262**. The first routing pass is **73e48d3** and the second routing pass is **2b1e08d**. Explicit routing classes and fabrication constraints were restored and verified in **8d3c7f9**.
 
 [Open the board](../../CAD/chatgpt_astra_test2/chatgpt_astra_test2.kicad_pcb) · [Top placement drawing](placement.svg) · [3D preview](board_3d.png)
 
@@ -34,6 +34,8 @@ The layer plan is:
 | B.Cu | Secondary signal routing and thermal copper |
 
 The board has net classes for 24 V, 3.3 V, analog signals and USB. USB track width and gap are preliminary; select the manufacturer's actual dielectric stackup before calculating the 90-ohm differential pair geometry.
+
+An audit after pass two found that the project file had retained only its default net class. The corrected project now stores all five classes: preferred widths 0.75 mm for 24 V, 0.6 mm for 3.3 V, 0.25 mm for default/analog, and 0.2 mm for USB. Clearances are 0.2 mm, compatible with the XTR111's native adjacent-pad gap. Local fine-pitch escapes can be narrower than the preferred trunk width. Minimum track width is 0.15 mm, via diameter/drill 0.6/0.3 mm, and copper-to-edge clearance 0.3 mm. Existing copper was rechecked under these settings with zero violations; two terminal legends were moved slightly to meet the explicit silkscreen clearance.
 
 ## Changes made for board design
 
