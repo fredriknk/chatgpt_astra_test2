@@ -1,3 +1,11 @@
+# Codex EE-design test, human foreword
+So, background, i saw the Chatgpt Astra demo for kicad design and wanted to try it out myself, i just have an Open AI plus subscription, so i had to use the LOW setting to not nuke my usage immidiatly. But it managed to make this design within my three usage resets. Im pretty damn impressed with the result, its not perfect, but it is a fully routed design with no drc errors made in under 3 hours with a 20$ subscription. I would say the most lacking part is the schematic, it is not very human readable, but i do understand why it is made as it is as ive tried multiple MCP's for ee design and wires in schematics becomes a hot mess with more than a few components. But now im out of resets so i thought i stop here. 
+
+Initial repo: [my kicad template](https://github.com/fredriknk/kicad_template)
+Initial promt: [prompt](https://github.com/fredriknk/chatgpt_astra_test2/blob/main/Prompt.md)
+
+After the initial prompt i basically just said "Sounds like a good idea" to any questions
+
 # ESP32 24 V current-loop interface - Rev A
 
 A 100 x 80 mm, four-layer prototype with an ESP32-S3, one protected 4-20 mA input, and one sourcing 4-20 mA output. Power and signal grounds are shared; this is not an isolated interface.
