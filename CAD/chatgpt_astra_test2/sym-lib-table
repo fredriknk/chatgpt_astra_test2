@@ -1,0 +1,1 @@
+(sym_lib_table (lib (name "LoopIO") (type "KiCad") (uri "${KIPRJMOD}/libraries/LoopIO.kicad_sym") (options "") (descr "Project-local symbols; KiCad stock plus datasheet-derived parts")))

@@ -1,0 +1,996 @@
+{
+  "J1": {
+    "sheet": "chatgpt_astra_test2",
+    "pins": {
+      "1": "VIN24",
+      "2": "GND"
+    },
+    "symbol": "Connector_Generic_Conn_01x02",
+    "footprint": "LoopIO:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal"
+  },
+  "J2": {
+    "sheet": "chatgpt_astra_test2",
+    "pins": {
+      "1": "SENSOR_PWR",
+      "2": "AI_IN",
+      "3": "GND"
+    },
+    "symbol": "Connector_Generic_Conn_01x03",
+    "footprint": "LoopIO:TerminalBlock_Phoenix_MKDS-1,5-3-5.08_1x03_P5.08mm_Horizontal"
+  },
+  "J3": {
+    "sheet": "chatgpt_astra_test2",
+    "pins": {
+      "1": "AO_OUT",
+      "2": "GND"
+    },
+    "symbol": "Connector_Generic_Conn_01x02",
+    "footprint": "LoopIO:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal"
+  },
+  "#FLG01": {
+    "sheet": "chatgpt_astra_test2",
+    "pins": {
+      "1": "VIN24"
+    },
+    "symbol": "power_PWR_FLAG",
+    "footprint": ""
+  },
+  "#FLG02": {
+    "sheet": "chatgpt_astra_test2",
+    "pins": {
+      "1": "GND"
+    },
+    "symbol": "power_PWR_FLAG",
+    "footprint": ""
+  },
+  "F1": {
+    "sheet": "power",
+    "pins": {
+      "1": "VIN24",
+      "2": "VIN_FUSED"
+    },
+    "symbol": "Device_Fuse",
+    "footprint": "LoopIO:Fuse_1206_3216Metric"
+  },
+  "D1": {
+    "sheet": "power",
+    "pins": {
+      "1": "VIN_FUSED",
+      "2": "GND"
+    },
+    "symbol": "Device_D_TVS",
+    "footprint": "LoopIO:D_SMB"
+  },
+  "C1": {
+    "sheet": "power",
+    "pins": {
+      "1": "VIN_FUSED",
+      "2": "GND"
+    },
+    "symbol": "Device_C",
+    "footprint": "LoopIO:C_0805_2012Metric"
+  },
+  "U1": {
+    "sheet": "power",
+    "pins": {
+      "1": "VIN_FUSED",
+      "2": "VIN_FUSED",
+      "3": "EF_UV",
+      "4": null,
+      "5": "EF_OV",
+      "6": "EF_RTN",
+      "7": "VIN_FUSED",
+      "8": "EF_RTN",
+      "9": "GND",
+      "10": null,
+      "11": "EF_ILIM",
+      "12": "EF_DVDT",
+      "13": null,
+      "14": null,
+      "15": "V24_PROT",
+      "16": "V24_PROT",
+      "17": "EF_RTN"
+    },
+    "symbol": "Power_Management_TPS26600PWP",
+    "footprint": "LoopIO:HTSSOP-16-1EP_4.4x5mm_P0.65mm_EP3.4x5mm_Mask2.66x2.46mm_ThermalVias"
+  },
+  "R1": {
+    "sheet": "power",
+    "pins": {
+      "1": "VIN_FUSED",
+      "2": "EF_UV"
+    },
+    "symbol": "Device_R",
+    "footprint": "LoopIO:R_0805_2012Metric"
+  },
+  "R2": {
+    "sheet": "power",
+    "pins": {
+      "1": "EF_UV",
+      "2": "EF_RTN"
+    },
+    "symbol": "Device_R",
+    "footprint": "LoopIO:R_0805_2012Metric"
+  },
+  "R3": {
+    "sheet": "power",
+    "pins": {
+      "1": "VIN_FUSED",
+      "2": "EF_OV"
+    },
+    "symbol": "Device_R",
+    "footprint": "LoopIO:R_0805_2012Metric"
+  },
+  "R4": {
+    "sheet": "power",
+    "pins": {
+      "1": "EF_OV",
+      "2": "EF_RTN"
+    },
+    "symbol": "Device_R",
+    "footprint": "LoopIO:R_0805_2012Metric"
+  },
+  "R5": {
+    "sheet": "power",
+    "pins": {
+      "1": "EF_ILIM",
+      "2": "EF_RTN"
+    },
+    "symbol": "Device_R",
+    "footprint": "LoopIO:R_0805_2012Metric"
+  },
+  "C2": {
+    "sheet": "power",
+    "pins": {
+      "1": "EF_DVDT",
+      "2": "EF_RTN"
+    },
+    "symbol": "Device_C",
+    "footprint": "LoopIO:C_0805_2012Metric"
+  },
+  "C3": {
+    "sheet": "power",
+    "pins": {
+      "1": "V24_PROT",
+      "2": "GND"
+    },
+    "symbol": "Device_C",
+    "footprint": "LoopIO:C_1210_3225Metric"
+  },
+  "D2": {
+    "sheet": "power",
+    "pins": {
+      "1": "V24_PROT",
+      "2": "GND"
+    },
+    "symbol": "Device_D",
+    "footprint": "LoopIO:D_SMA"
+  },
+  "U2": {
+    "sheet": "power",
+    "pins": {
+      "1": "GND",
+      "2": "V24_PROT",
+      "3": "V24_PROT",
+      "4": null,
+      "5": "BUCK_FB",
+      "6": "BUCK_VCC",
+      "7": "BUCK_BOOT",
+      "8": "BUCK_SW",
+      "9": "GND"
+    },
+    "symbol": "Regulator_Switching_LMR36510ADDA",
+    "footprint": "LoopIO:Texas_HTSOP-8-1EP_3.9x4.9mm_P1.27mm_EP2.95x4.9mm_Mask2.4x3.1mm_ThermalVias"
+  },
+  "L1": {
+    "sheet": "power",
+    "pins": {
+      "1": "BUCK_SW",
+      "2": "V3V3"
+    },
+    "symbol": "Device_L",
+    "footprint": "LoopIO:L_Bourns_SRN6045TA"
+  },
+  "C4": {
+    "sheet": "power",
+    "pins": {
+      "1": "V24_PROT",
+      "2": "GND"
+    },
+    "symbol": "Device_C",
+    "footprint": "LoopIO:C_1210_3225Metric"
+  },
+  "C5": {
+    "sheet": "power",
+    "pins": {
+      "1": "V24_PROT",
+      "2": "GND"
+    },
+    "symbol": "Device_C",
+    "footprint": "LoopIO:C_0805_2012Metric"
+  },
+  "C6": {
+    "sheet": "power",
+    "pins": {
+      "1": "BUCK_BOOT",
+      "2": "BUCK_SW"
+    },
+    "symbol": "Device_C",
+    "footprint": "LoopIO:C_0805_2012Metric"
+  },
+  "C7": {
+    "sheet": "power",
+    "pins": {
+      "1": "BUCK_VCC",
+      "2": "GND"
+    },
+    "symbol": "Device_C",
+    "footprint": "LoopIO:C_0805_2012Metric"
+  },
+  "C8": {
+    "sheet": "power",
+    "pins": {
+      "1": "V3V3",
+      "2": "GND"
+    },
+    "symbol": "Device_C",
+    "footprint": "LoopIO:C_1206_3216Metric"
+  },
+  "C9": {
+    "sheet": "power",
+    "pins": {
+      "1": "V3V3",
+      "2": "GND"
+    },
+    "symbol": "Device_C",
+    "footprint": "LoopIO:C_1206_3216Metric"
+  },
+  "C10": {
+    "sheet": "power",
+    "pins": {
+      "1": "V3V3",
+      "2": "GND"
+    },
+    "symbol": "Device_C",
+    "footprint": "LoopIO:C_1206_3216Metric"
+  },
+  "R6": {
+    "sheet": "power",
+    "pins": {
+      "1": "V3V3",
+      "2": "BUCK_FB"
+    },
+    "symbol": "Device_R",
+    "footprint": "LoopIO:R_0805_2012Metric"
+  },
+  "R7": {
+    "sheet": "power",
+    "pins": {
+      "1": "BUCK_FB",
+      "2": "GND"
+    },
+    "symbol": "Device_R",
+    "footprint": "LoopIO:R_0805_2012Metric"
+  },
+  "#FLG03": {
+    "sheet": "power",
+    "pins": {
+      "1": "V3V3"
+    },
+    "symbol": "power_PWR_FLAG",
+    "footprint": ""
+  },
+  "#FLG04": {
+    "sheet": "power",
+    "pins": {
+      "1": "VIN_FUSED"
+    },
+    "symbol": "power_PWR_FLAG",
+    "footprint": ""
+  },
+  "U3": {
+    "sheet": "power",
+    "pins": {
+      "3": "V24_PROT",
+      "1": "SENS_SET",
+      "2": "SENS_RAW"
+    },
+    "symbol": "LT3092EST",
+    "footprint": "LoopIO:SOT-223-3_TabPin2"
+  },
+  "R8": {
+    "sheet": "power",
+    "pins": {
+      "1": "SENS_SET",
+      "2": "SENSOR_PWR"
+    },
+    "symbol": "Device_R",
+    "footprint": "LoopIO:R_0805_2012Metric"
+  },
+  "R9": {
+    "sheet": "power",
+    "pins": {
+      "1": "SENS_RAW",
+      "2": "SENSOR_PWR"
+    },
+    "symbol": "Device_R",
+    "footprint": "LoopIO:R_0805_2012Metric"
+  },
+  "U4": {
+    "sheet": "controller",
+    "pins": {
+      "3": "ESP_EN",
+      "27": "BOOT_N",
+      "39": null,
+      "38": null,
+      "15": null,
+      "4": null,
+      "5": null,
+      "6": null,
+      "7": null,
+      "12": "I2C_SDA",
+      "17": "I2C_SCL",
+      "18": "AO_ENABLE",
+      "19": "AO_FAULT_N",
+      "20": "ADC_RDY",
+      "21": "LED_STATUS",
+      "22": null,
+      "8": null,
+      "9": null,
+      "2": "V3V3",
+      "1": "GND",
+      "40": "GND",
+      "41": "GND",
+      "37": "UART_TX",
+      "36": "UART_RX",
+      "10": null,
+      "11": null,
+      "13": "USB_DM_MCU",
+      "14": "USB_DP_MCU",
+      "23": null,
+      "28": null,
+      "29": null,
+      "30": null,
+      "31": null,
+      "32": null,
+      "33": null,
+      "34": null,
+      "35": null,
+      "26": null,
+      "16": null,
+      "24": null,
+      "25": null
+    },
+    "symbol": "RF_Module_ESP32-S3-WROOM-1",
+    "footprint": "LoopIO:ESP32-S3-WROOM-1"
+  },
+  "C11": {
+    "sheet": "controller",
+    "pins": {
+      "1": "V3V3",
+      "2": "GND"
+    },
+    "symbol": "Device_C",
+    "footprint": "LoopIO:C_0805_2012Metric"
+  },
+  "C12": {
+    "sheet": "controller",
+    "pins": {
+      "1": "V3V3",
+      "2": "GND"
+    },
+    "symbol": "Device_C",
+    "footprint": "LoopIO:C_0805_2012Metric"
+  },
+  "R10": {
+    "sheet": "controller",
+    "pins": {
+      "1": "V3V3",
+      "2": "ESP_EN"
+    },
+    "symbol": "Device_R",
+    "footprint": "LoopIO:R_0805_2012Metric"
+  },
+  "R11": {
+    "sheet": "controller",
+    "pins": {
+      "1": "V3V3",
+      "2": "BOOT_N"
+    },
+    "symbol": "Device_R",
+    "footprint": "LoopIO:R_0805_2012Metric"
+  },
+  "C13": {
+    "sheet": "controller",
+    "pins": {
+      "1": "ESP_EN",
+      "2": "GND"
+    },
+    "symbol": "Device_C",
+    "footprint": "LoopIO:C_0805_2012Metric"
+  },
+  "SW1": {
+    "sheet": "controller",
+    "pins": {
+      "1": "ESP_EN",
+      "2": "GND"
+    },
+    "symbol": "Switch_SW_Push",
+    "footprint": "LoopIO:SW_SPST_TL3342"
+  },
+  "SW2": {
+    "sheet": "controller",
+    "pins": {
+      "1": "BOOT_N",
+      "2": "GND"
+    },
+    "symbol": "Switch_SW_Push",
+    "footprint": "LoopIO:SW_SPST_TL3342"
+  },
+  "U5": {
+    "sheet": "controller",
+    "pins": {
+      "1": "GND",
+      "2": "SYS_OK",
+      "3": "V3V3"
+    },
+    "symbol": "Power_Supervisor_TPS3839DBZ",
+    "footprint": "LoopIO:SOT-23"
+  },
+  "D3": {
+    "sheet": "controller",
+    "pins": {
+      "1": "SYS_OK",
+      "2": "ESP_EN"
+    },
+    "symbol": "Device_D",
+    "footprint": "LoopIO:D_SOD-123"
+  },
+  "C14": {
+    "sheet": "controller",
+    "pins": {
+      "1": "V3V3",
+      "2": "GND"
+    },
+    "symbol": "Device_C",
+    "footprint": "LoopIO:C_0805_2012Metric"
+  },
+  "R12": {
+    "sheet": "controller",
+    "pins": {
+      "1": "V3V3",
+      "2": "I2C_SDA"
+    },
+    "symbol": "Device_R",
+    "footprint": "LoopIO:R_0805_2012Metric"
+  },
+  "R13": {
+    "sheet": "controller",
+    "pins": {
+      "1": "V3V3",
+      "2": "I2C_SCL"
+    },
+    "symbol": "Device_R",
+    "footprint": "LoopIO:R_0805_2012Metric"
+  },
+  "R14": {
+    "sheet": "controller",
+    "pins": {
+      "1": "LED_STATUS",
+      "2": "LED_A"
+    },
+    "symbol": "Device_R",
+    "footprint": "LoopIO:R_0805_2012Metric"
+  },
+  "D4": {
+    "sheet": "controller",
+    "pins": {
+      "1": "GND",
+      "2": "LED_A"
+    },
+    "symbol": "Device_LED",
+    "footprint": "LoopIO:LED_0805_2012Metric"
+  },
+  "J5": {
+    "sheet": "controller",
+    "pins": {
+      "1": "GND",
+      "2": "UART_TX",
+      "3": "UART_RX",
+      "4": "V3V3"
+    },
+    "symbol": "Connector_Generic_Conn_01x04",
+    "footprint": "LoopIO:PinHeader_1x04_P2.54mm_Vertical"
+  },
+  "J4": {
+    "sheet": "controller",
+    "pins": {
+      "S1": "GND",
+      "A1": "GND",
+      "A12": "GND",
+      "B1": "GND",
+      "B12": "GND",
+      "A4": "USB_VBUS",
+      "A9": "USB_VBUS",
+      "B4": "USB_VBUS",
+      "B9": "USB_VBUS",
+      "A5": "USB_CC1",
+      "B5": "USB_CC2",
+      "A7": "USB_DM",
+      "B7": "USB_DM",
+      "A6": "USB_DP",
+      "B6": "USB_DP",
+      "A8": null,
+      "B8": null
+    },
+    "symbol": "Connector_USB_C_Receptacle_USB2.0_16P",
+    "footprint": "LoopIO:USB_C_Receptacle_HRO_TYPE-C-31-M-12"
+  },
+  "R15": {
+    "sheet": "controller",
+    "pins": {
+      "1": "USB_CC1",
+      "2": "GND"
+    },
+    "symbol": "Device_R",
+    "footprint": "LoopIO:R_0805_2012Metric"
+  },
+  "R16": {
+    "sheet": "controller",
+    "pins": {
+      "1": "USB_CC2",
+      "2": "GND"
+    },
+    "symbol": "Device_R",
+    "footprint": "LoopIO:R_0805_2012Metric"
+  },
+  "U6": {
+    "sheet": "controller",
+    "pins": {
+      "1": "USB_DP",
+      "6": "USB_DP_ESD",
+      "3": "USB_DM",
+      "4": "USB_DM_ESD",
+      "5": "USB_VBUS",
+      "2": "GND"
+    },
+    "symbol": "Power_Protection_USBLC6-2SC6",
+    "footprint": "LoopIO:SOT-23-6"
+  },
+  "R17": {
+    "sheet": "controller",
+    "pins": {
+      "1": "USB_DP_ESD",
+      "2": "USB_DP_MCU"
+    },
+    "symbol": "Device_R",
+    "footprint": "LoopIO:R_0805_2012Metric"
+  },
+  "R18": {
+    "sheet": "controller",
+    "pins": {
+      "1": "USB_DM_ESD",
+      "2": "USB_DM_MCU"
+    },
+    "symbol": "Device_R",
+    "footprint": "LoopIO:R_0805_2012Metric"
+  },
+  "D5": {
+    "sheet": "analog_input",
+    "pins": {
+      "1": "AI_DIODE",
+      "2": "AI_IN"
+    },
+    "symbol": "Device_D",
+    "footprint": "LoopIO:D_SOD-123"
+  },
+  "R19": {
+    "sheet": "analog_input",
+    "pins": {
+      "1": "AI_DIODE",
+      "2": "AI_PROT"
+    },
+    "symbol": "Device_R",
+    "footprint": "LoopIO:R_1206_3216Metric"
+  },
+  "D6": {
+    "sheet": "analog_input",
+    "pins": {
+      "1": "AI_PROT",
+      "2": "GND"
+    },
+    "symbol": "Device_D_Zener",
+    "footprint": "LoopIO:D_DO-41_SOD81_P10.16mm_Horizontal"
+  },
+  "U7": {
+    "sheet": "analog_input",
+    "pins": {
+      "3": "AI_PROT",
+      "1": "AI_SET",
+      "2": "AI_LIMIT_OUT"
+    },
+    "symbol": "LT3092EST",
+    "footprint": "LoopIO:SOT-223-3_TabPin2"
+  },
+  "R20": {
+    "sheet": "analog_input",
+    "pins": {
+      "1": "AI_SET",
+      "2": "AI_SHUNT"
+    },
+    "symbol": "Device_R",
+    "footprint": "LoopIO:R_0805_2012Metric"
+  },
+  "R21": {
+    "sheet": "analog_input",
+    "pins": {
+      "1": "AI_LIMIT_OUT",
+      "2": "AI_SHUNT"
+    },
+    "symbol": "Device_R",
+    "footprint": "LoopIO:R_0805_2012Metric"
+  },
+  "R22": {
+    "sheet": "analog_input",
+    "pins": {
+      "1": "AI_SHUNT",
+      "2": "GND"
+    },
+    "symbol": "Device_R",
+    "footprint": "LoopIO:R_1206_3216Metric"
+  },
+  "TP1": {
+    "sheet": "analog_input",
+    "pins": {
+      "1": "AI_SHUNT"
+    },
+    "symbol": "Connector_TestPoint",
+    "footprint": "LoopIO:TestPoint_Pad_D1.5mm"
+  },
+  "R23": {
+    "sheet": "analog_input",
+    "pins": {
+      "1": "AI_SHUNT",
+      "2": "AI_CLAMP"
+    },
+    "symbol": "Device_R",
+    "footprint": "LoopIO:R_0805_2012Metric"
+  },
+  "U8": {
+    "sheet": "analog_input",
+    "pins": {
+      "1": "AI_CLAMP",
+      "2": "GND",
+      "3": null
+    },
+    "symbol": "Reference_Voltage_LM4040DBZ-3",
+    "footprint": "LoopIO:SOT-23"
+  },
+  "D7": {
+    "sheet": "analog_input",
+    "pins": {
+      "1": "AI_CLAMP",
+      "2": "GND"
+    },
+    "symbol": "Device_D",
+    "footprint": "LoopIO:D_SOD-123"
+  },
+  "U9": {
+    "sheet": "analog_input",
+    "pins": {
+      "1": "SYS_OK",
+      "2": "AI_CLAMP",
+      "3": "AI_ADC",
+      "4": "GND",
+      "5": "GND",
+      "6": null,
+      "7": "GND",
+      "8": null,
+      "9": "GND",
+      "10": "GND",
+      "11": null,
+      "12": "GND",
+      "13": "GND",
+      "14": "V3V3"
+    },
+    "symbol": "TMUX1511PWR",
+    "footprint": "LoopIO:TSSOP-14_4.4x5mm_P0.65mm"
+  },
+  "C15": {
+    "sheet": "analog_input",
+    "pins": {
+      "1": "V3V3",
+      "2": "GND"
+    },
+    "symbol": "Device_C",
+    "footprint": "LoopIO:C_0805_2012Metric"
+  },
+  "C16": {
+    "sheet": "analog_input",
+    "pins": {
+      "1": "AI_ADC",
+      "2": "GND"
+    },
+    "symbol": "Device_C",
+    "footprint": "LoopIO:C_0805_2012Metric"
+  },
+  "U10": {
+    "sheet": "analog_input",
+    "pins": {
+      "1": "GND",
+      "2": "ADC_RDY",
+      "3": "GND",
+      "4": "AI_ADC",
+      "5": "GND",
+      "6": "GND",
+      "7": "GND",
+      "8": "V3V3",
+      "9": "I2C_SDA",
+      "10": "I2C_SCL"
+    },
+    "symbol": "Analog_ADC_ADS1115IDGS",
+    "footprint": "LoopIO:TSSOP-10_3x3mm_P0.5mm"
+  },
+  "C17": {
+    "sheet": "analog_input",
+    "pins": {
+      "1": "V3V3",
+      "2": "GND"
+    },
+    "symbol": "Device_C",
+    "footprint": "LoopIO:C_0805_2012Metric"
+  },
+  "C18": {
+    "sheet": "analog_input",
+    "pins": {
+      "1": "V3V3",
+      "2": "GND"
+    },
+    "symbol": "Device_C",
+    "footprint": "LoopIO:C_0805_2012Metric"
+  },
+  "R24": {
+    "sheet": "analog_input",
+    "pins": {
+      "1": "V3V3",
+      "2": "ADC_RDY"
+    },
+    "symbol": "Device_R",
+    "footprint": "LoopIO:R_0805_2012Metric"
+  },
+  "TP2": {
+    "sheet": "analog_input",
+    "pins": {
+      "1": "AI_ADC"
+    },
+    "symbol": "Connector_TestPoint",
+    "footprint": "LoopIO:TestPoint_Pad_D1.5mm"
+  },
+  "U11": {
+    "sheet": "analog_output",
+    "pins": {
+      "1": "V3V3",
+      "2": "DAC_RAW",
+      "3": null,
+      "4": "GND",
+      "5": "V3V3",
+      "6": "I2C_SCL",
+      "7": "V3V3",
+      "8": "I2C_SDA",
+      "9": null,
+      "10": "DAC_REF"
+    },
+    "symbol": "DAC80501ZDGS",
+    "footprint": "LoopIO:VSSOP-10_3x3mm_P0.5mm"
+  },
+  "C19": {
+    "sheet": "analog_output",
+    "pins": {
+      "1": "V3V3",
+      "2": "GND"
+    },
+    "symbol": "Device_C",
+    "footprint": "LoopIO:C_0805_2012Metric"
+  },
+  "C20": {
+    "sheet": "analog_output",
+    "pins": {
+      "1": "V3V3",
+      "2": "GND"
+    },
+    "symbol": "Device_C",
+    "footprint": "LoopIO:C_0805_2012Metric"
+  },
+  "C21": {
+    "sheet": "analog_output",
+    "pins": {
+      "1": "DAC_REF",
+      "2": "GND"
+    },
+    "symbol": "Device_C",
+    "footprint": "LoopIO:C_0805_2012Metric"
+  },
+  "R25": {
+    "sheet": "analog_output",
+    "pins": {
+      "1": "DAC_RAW",
+      "2": "DAC_FILTER"
+    },
+    "symbol": "Device_R",
+    "footprint": "LoopIO:R_0805_2012Metric"
+  },
+  "C22": {
+    "sheet": "analog_output",
+    "pins": {
+      "1": "DAC_FILTER",
+      "2": "GND"
+    },
+    "symbol": "Device_C",
+    "footprint": "LoopIO:C_0805_2012Metric"
+  },
+  "TP3": {
+    "sheet": "analog_output",
+    "pins": {
+      "1": "DAC_FILTER"
+    },
+    "symbol": "Connector_TestPoint",
+    "footprint": "LoopIO:TestPoint_Pad_D1.5mm"
+  },
+  "U12": {
+    "sheet": "analog_output",
+    "pins": {
+      "1": "V24_PROT",
+      "2": "XTR_IS",
+      "3": "XTR_GATE",
+      "4": "XTR_REG",
+      "5": "XTR_REG",
+      "6": "DAC_FILTER",
+      "7": "XTR_SET",
+      "8": "AO_FAULT_N",
+      "9": "XTR_OD",
+      "10": "GND",
+      "11": "GND"
+    },
+    "symbol": "Interface_CurrentLoop_XTR111AxDGQ",
+    "footprint": "LoopIO:MSOP-10-1EP_3x3mm_P0.5mm_EP2.2x3.1mm_Mask1.83x1.89mm_ThermalVias"
+  },
+  "C23": {
+    "sheet": "analog_output",
+    "pins": {
+      "1": "V24_PROT",
+      "2": "GND"
+    },
+    "symbol": "Device_C",
+    "footprint": "LoopIO:C_0805_2012Metric"
+  },
+  "C24": {
+    "sheet": "analog_output",
+    "pins": {
+      "1": "XTR_REG",
+      "2": "GND"
+    },
+    "symbol": "Device_C",
+    "footprint": "LoopIO:C_0805_2012Metric"
+  },
+  "R26": {
+    "sheet": "analog_output",
+    "pins": {
+      "1": "XTR_SET",
+      "2": "GND"
+    },
+    "symbol": "Device_R",
+    "footprint": "LoopIO:R_0805_2012Metric"
+  },
+  "R27": {
+    "sheet": "analog_output",
+    "pins": {
+      "1": "XTR_REG",
+      "2": "XTR_OD"
+    },
+    "symbol": "Device_R",
+    "footprint": "LoopIO:R_0805_2012Metric"
+  },
+  "R28": {
+    "sheet": "analog_output",
+    "pins": {
+      "1": "V3V3",
+      "2": "AO_FAULT_N"
+    },
+    "symbol": "Device_R",
+    "footprint": "LoopIO:R_0805_2012Metric"
+  },
+  "Q1": {
+    "sheet": "analog_output",
+    "pins": {
+      "1": "AO_ENABLE",
+      "2": "OD_MID",
+      "3": "XTR_OD"
+    },
+    "symbol": "Transistor_FET_2N7002",
+    "footprint": "LoopIO:SOT-23"
+  },
+  "Q2": {
+    "sheet": "analog_output",
+    "pins": {
+      "1": "SYS_OK",
+      "2": "GND",
+      "3": "OD_MID"
+    },
+    "symbol": "Transistor_FET_2N7002",
+    "footprint": "LoopIO:SOT-23"
+  },
+  "R29": {
+    "sheet": "analog_output",
+    "pins": {
+      "1": "AO_ENABLE",
+      "2": "GND"
+    },
+    "symbol": "Device_R",
+    "footprint": "LoopIO:R_0805_2012Metric"
+  },
+  "Q3": {
+    "sheet": "analog_output",
+    "pins": {
+      "1": "XTR_GATE",
+      "2": "AO_DRAIN",
+      "3": "PMOS_SOURCE"
+    },
+    "symbol": "Transistor_FET_IRF9540N",
+    "footprint": "LoopIO:TO-220-3_Vertical"
+  },
+  "R30": {
+    "sheet": "analog_output",
+    "pins": {
+      "1": "XTR_IS",
+      "2": "PMOS_SOURCE"
+    },
+    "symbol": "Device_R",
+    "footprint": "LoopIO:R_0805_2012Metric"
+  },
+  "Q4": {
+    "sheet": "analog_output",
+    "pins": {
+      "1": "PMOS_SOURCE",
+      "2": "XTR_IS",
+      "3": "XTR_GATE"
+    },
+    "symbol": "Transistor_BJT_MMBT3906",
+    "footprint": "LoopIO:SOT-23"
+  },
+  "R31": {
+    "sheet": "analog_output",
+    "pins": {
+      "1": "AO_DRAIN",
+      "2": "AO_FILTER"
+    },
+    "symbol": "Device_R",
+    "footprint": "LoopIO:R_0805_2012Metric"
+  },
+  "C25": {
+    "sheet": "analog_output",
+    "pins": {
+      "1": "AO_FILTER",
+      "2": "GND"
+    },
+    "symbol": "Device_C",
+    "footprint": "LoopIO:C_0805_2012Metric"
+  },
+  "D8": {
+    "sheet": "analog_output",
+    "pins": {
+      "1": "AO_OUT",
+      "2": "AO_FILTER"
+    },
+    "symbol": "Device_D",
+    "footprint": "LoopIO:D_SOD-123"
+  },
+  "D9": {
+    "sheet": "analog_output",
+    "pins": {
+      "1": "AO_OUT",
+      "2": "GND"
+    },
+    "symbol": "Device_D_TVS",
+    "footprint": "LoopIO:D_SMB"
+  }
+}

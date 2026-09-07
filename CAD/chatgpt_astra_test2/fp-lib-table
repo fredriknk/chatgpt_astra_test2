@@ -1,0 +1,1 @@
+(fp_lib_table (lib (name "LoopIO") (type "KiCad") (uri "${KIPRJMOD}/libraries/LoopIO.pretty") (options "") (descr "Project-local KiCad footprints")))

@@ -1,0 +1,34 @@
+{
+    "$schema": "https://schemas.kicad.org/erc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-09-07T11:16:26+0200",
+    "kicad_version": "9.0.7",
+    "sheets": [
+        {
+            "path": "/",
+            "uuid_path": "/a269929a-5104-4f3f-907a-1d34fef46421",
+            "violations": []
+        },
+        {
+            "path": "/02 / POWER AND SENSOR SUPPLY/",
+            "uuid_path": "/a269929a-5104-4f3f-907a-1d34fef46421/5497daaa-6637-5df0-a737-a00b27710342",
+            "violations": []
+        },
+        {
+            "path": "/03 / ESP32 AND USB/",
+            "uuid_path": "/a269929a-5104-4f3f-907a-1d34fef46421/03be0b7e-5011-5d64-8b74-c812315fedf1",
+            "violations": []
+        },
+        {
+            "path": "/04 / PROTECTED CURRENT INPUT/",
+            "uuid_path": "/a269929a-5104-4f3f-907a-1d34fef46421/c5a956cd-ac58-5f81-8472-3452e70bf6e4",
+            "violations": []
+        },
+        {
+            "path": "/05 / PRECISION CURRENT OUTPUT/",
+            "uuid_path": "/a269929a-5104-4f3f-907a-1d34fef46421/17c8310c-2019-5372-b9b4-a53b1317f7e3",
+            "violations": []
+        }
+    ],
+    "source": "chatgpt_astra_test2.kicad_sch"
+}

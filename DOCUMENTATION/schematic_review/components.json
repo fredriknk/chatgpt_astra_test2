@@ -1,0 +1,653 @@
+[
+  {
+    "Reference": "J1",
+    "Value": "18-30 V DC",
+    "Footprint": "LoopIO:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal",
+    "Datasheet": "~",
+    "Description": ""
+  },
+  {
+    "Reference": "J2",
+    "Value": "CURRENT INPUT",
+    "Footprint": "LoopIO:TerminalBlock_Phoenix_MKDS-1,5-3-5.08_1x03_P5.08mm_Horizontal",
+    "Datasheet": "~",
+    "Description": ""
+  },
+  {
+    "Reference": "J3",
+    "Value": "CURRENT OUTPUT",
+    "Footprint": "LoopIO:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal",
+    "Datasheet": "~",
+    "Description": ""
+  },
+  {
+    "Reference": "F1",
+    "Value": "500mA / >=60V",
+    "Footprint": "LoopIO:Fuse_1206_3216Metric",
+    "Datasheet": "~",
+    "Description": ""
+  },
+  {
+    "Reference": "D1",
+    "Value": "SMBJ33CA",
+    "Footprint": "LoopIO:D_SMB",
+    "Datasheet": "~",
+    "Description": ""
+  },
+  {
+    "Reference": "C1",
+    "Value": "100n / 100V",
+    "Footprint": "LoopIO:C_0805_2012Metric",
+    "Datasheet": "~",
+    "Description": ""
+  },
+  {
+    "Reference": "U1",
+    "Value": "TPS26600PWPR",
+    "Footprint": "LoopIO:HTSSOP-16-1EP_4.4x5mm_P0.65mm_EP3.4x5mm_Mask2.66x2.46mm_ThermalVias",
+    "Datasheet": "https://www.ti.com/lit/ds/symlink/tps2660.pdf",
+    "Description": ""
+  },
+  {
+    "Reference": "R1",
+    "Value": "130k / 0.1%",
+    "Footprint": "LoopIO:R_0805_2012Metric",
+    "Datasheet": "~",
+    "Description": ""
+  },
+  {
+    "Reference": "R2",
+    "Value": "10k / 0.1%",
+    "Footprint": "LoopIO:R_0805_2012Metric",
+    "Datasheet": "~",
+    "Description": ""
+  },
+  {
+    "Reference": "R3",
+    "Value": "274k / 0.1%",
+    "Footprint": "LoopIO:R_0805_2012Metric",
+    "Datasheet": "~",
+    "Description": ""
+  },
+  {
+    "Reference": "R4",
+    "Value": "10k / 0.1%",
+    "Footprint": "LoopIO:R_0805_2012Metric",
+    "Datasheet": "~",
+    "Description": ""
+  },
+  {
+    "Reference": "R5",
+    "Value": "30.1k / 1%",
+    "Footprint": "LoopIO:R_0805_2012Metric",
+    "Datasheet": "~",
+    "Description": ""
+  },
+  {
+    "Reference": "C2",
+    "Value": "10n / 50V",
+    "Footprint": "LoopIO:C_0805_2012Metric",
+    "Datasheet": "~",
+    "Description": ""
+  },
+  {
+    "Reference": "C3",
+    "Value": "22u / 63V",
+    "Footprint": "LoopIO:C_1210_3225Metric",
+    "Datasheet": "~",
+    "Description": ""
+  },
+  {
+    "Reference": "D2",
+    "Value": "SS110",
+    "Footprint": "LoopIO:D_SMA",
+    "Datasheet": "~",
+    "Description": ""
+  },
+  {
+    "Reference": "U2",
+    "Value": "LMR36510ADDAR",
+    "Footprint": "LoopIO:Texas_HTSOP-8-1EP_3.9x4.9mm_P1.27mm_EP2.95x4.9mm_Mask2.4x3.1mm_ThermalVias",
+    "Datasheet": "http://www.ti.com/lit/ds/symlink/lmr36510.pdf",
+    "Description": ""
+  },
+  {
+    "Reference": "L1",
+    "Value": "22uH / Isat >=2A",
+    "Footprint": "LoopIO:L_Bourns_SRN6045TA",
+    "Datasheet": "~",
+    "Description": ""
+  },
+  {
+    "Reference": "C4",
+    "Value": "2.2u / 100V",
+    "Footprint": "LoopIO:C_1210_3225Metric",
+    "Datasheet": "~",
+    "Description": ""
+  },
+  {
+    "Reference": "C5",
+    "Value": "220n / 100V",
+    "Footprint": "LoopIO:C_0805_2012Metric",
+    "Datasheet": "~",
+    "Description": ""
+  },
+  {
+    "Reference": "C6",
+    "Value": "100n / 16V",
+    "Footprint": "LoopIO:C_0805_2012Metric",
+    "Datasheet": "~",
+    "Description": ""
+  },
+  {
+    "Reference": "C7",
+    "Value": "1u / 16V",
+    "Footprint": "LoopIO:C_0805_2012Metric",
+    "Datasheet": "~",
+    "Description": ""
+  },
+  {
+    "Reference": "C8",
+    "Value": "22u / 10V",
+    "Footprint": "LoopIO:C_1206_3216Metric",
+    "Datasheet": "~",
+    "Description": ""
+  },
+  {
+    "Reference": "C9",
+    "Value": "22u / 10V",
+    "Footprint": "LoopIO:C_1206_3216Metric",
+    "Datasheet": "~",
+    "Description": ""
+  },
+  {
+    "Reference": "C10",
+    "Value": "22u / 10V",
+    "Footprint": "LoopIO:C_1206_3216Metric",
+    "Datasheet": "~",
+    "Description": ""
+  },
+  {
+    "Reference": "R6",
+    "Value": "100k / 0.1%",
+    "Footprint": "LoopIO:R_0805_2012Metric",
+    "Datasheet": "~",
+    "Description": ""
+  },
+  {
+    "Reference": "R7",
+    "Value": "43.2k / 0.1%",
+    "Footprint": "LoopIO:R_0805_2012Metric",
+    "Datasheet": "~",
+    "Description": ""
+  },
+  {
+    "Reference": "U3",
+    "Value": "LT3092EST#PBF",
+    "Footprint": "LoopIO:SOT-223-3_TabPin2",
+    "Datasheet": "https://www.analog.com/media/en/technical-documentation/data-sheets/lt3092.pdf",
+    "Description": ""
+  },
+  {
+    "Reference": "R8",
+    "Value": "40.2k / 0.1%",
+    "Footprint": "LoopIO:R_0805_2012Metric",
+    "Datasheet": "~",
+    "Description": ""
+  },
+  {
+    "Reference": "R9",
+    "Value": "10R / 0.1%",
+    "Footprint": "LoopIO:R_0805_2012Metric",
+    "Datasheet": "~",
+    "Description": ""
+  },
+  {
+    "Reference": "U4",
+    "Value": "ESP32-S3-WROOM-1-N8",
+    "Footprint": "LoopIO:ESP32-S3-WROOM-1",
+    "Datasheet": "https://www.espressif.com/sites/default/files/documentation/esp32-s3-wroom-1_wroom-1u_datasheet_en.pdf",
+    "Description": ""
+  },
+  {
+    "Reference": "C11",
+    "Value": "10u / 10V",
+    "Footprint": "LoopIO:C_0805_2012Metric",
+    "Datasheet": "~",
+    "Description": ""
+  },
+  {
+    "Reference": "C12",
+    "Value": "100n / 16V",
+    "Footprint": "LoopIO:C_0805_2012Metric",
+    "Datasheet": "~",
+    "Description": ""
+  },
+  {
+    "Reference": "R10",
+    "Value": "10k",
+    "Footprint": "LoopIO:R_0805_2012Metric",
+    "Datasheet": "~",
+    "Description": ""
+  },
+  {
+    "Reference": "R11",
+    "Value": "10k",
+    "Footprint": "LoopIO:R_0805_2012Metric",
+    "Datasheet": "~",
+    "Description": ""
+  },
+  {
+    "Reference": "C13",
+    "Value": "1u / 10V",
+    "Footprint": "LoopIO:C_0805_2012Metric",
+    "Datasheet": "~",
+    "Description": ""
+  },
+  {
+    "Reference": "SW1",
+    "Value": "RESET",
+    "Footprint": "LoopIO:SW_SPST_TL3342",
+    "Datasheet": "~",
+    "Description": ""
+  },
+  {
+    "Reference": "SW2",
+    "Value": "BOOT",
+    "Footprint": "LoopIO:SW_SPST_TL3342",
+    "Datasheet": "~",
+    "Description": ""
+  },
+  {
+    "Reference": "U5",
+    "Value": "TPS3839G33DBZR",
+    "Footprint": "LoopIO:SOT-23",
+    "Datasheet": "http://www.ti.com/lit/ds/sbvs193d/sbvs193d.pdf",
+    "Description": ""
+  },
+  {
+    "Reference": "D3",
+    "Value": "BAT54W",
+    "Footprint": "LoopIO:D_SOD-123",
+    "Datasheet": "~",
+    "Description": ""
+  },
+  {
+    "Reference": "C14",
+    "Value": "100n / 16V",
+    "Footprint": "LoopIO:C_0805_2012Metric",
+    "Datasheet": "~",
+    "Description": ""
+  },
+  {
+    "Reference": "R12",
+    "Value": "4.7k",
+    "Footprint": "LoopIO:R_0805_2012Metric",
+    "Datasheet": "~",
+    "Description": ""
+  },
+  {
+    "Reference": "R13",
+    "Value": "4.7k",
+    "Footprint": "LoopIO:R_0805_2012Metric",
+    "Datasheet": "~",
+    "Description": ""
+  },
+  {
+    "Reference": "R14",
+    "Value": "1k",
+    "Footprint": "LoopIO:R_0805_2012Metric",
+    "Datasheet": "~",
+    "Description": ""
+  },
+  {
+    "Reference": "D4",
+    "Value": "GREEN",
+    "Footprint": "LoopIO:LED_0805_2012Metric",
+    "Datasheet": "~",
+    "Description": ""
+  },
+  {
+    "Reference": "J5",
+    "Value": "UART / 3.3 V ONLY",
+    "Footprint": "LoopIO:PinHeader_1x04_P2.54mm_Vertical",
+    "Datasheet": "~",
+    "Description": ""
+  },
+  {
+    "Reference": "J4",
+    "Value": "USB-C",
+    "Footprint": "LoopIO:USB_C_Receptacle_HRO_TYPE-C-31-M-12",
+    "Datasheet": "https://www.usb.org/sites/default/files/documents/usb_type-c.zip",
+    "Description": ""
+  },
+  {
+    "Reference": "R15",
+    "Value": "5.1k / 1%",
+    "Footprint": "LoopIO:R_0805_2012Metric",
+    "Datasheet": "~",
+    "Description": ""
+  },
+  {
+    "Reference": "R16",
+    "Value": "5.1k / 1%",
+    "Footprint": "LoopIO:R_0805_2012Metric",
+    "Datasheet": "~",
+    "Description": ""
+  },
+  {
+    "Reference": "U6",
+    "Value": "USBLC6-2SC6",
+    "Footprint": "LoopIO:SOT-23-6",
+    "Datasheet": "https://www.st.com/resource/en/datasheet/usblc6-2.pdf",
+    "Description": ""
+  },
+  {
+    "Reference": "R17",
+    "Value": "22R",
+    "Footprint": "LoopIO:R_0805_2012Metric",
+    "Datasheet": "~",
+    "Description": ""
+  },
+  {
+    "Reference": "R18",
+    "Value": "22R",
+    "Footprint": "LoopIO:R_0805_2012Metric",
+    "Datasheet": "~",
+    "Description": ""
+  },
+  {
+    "Reference": "D5",
+    "Value": "BAV21W",
+    "Footprint": "LoopIO:D_SOD-123",
+    "Datasheet": "~",
+    "Description": ""
+  },
+  {
+    "Reference": "R19",
+    "Value": "33R / pulse rated",
+    "Footprint": "LoopIO:R_1206_3216Metric",
+    "Datasheet": "~",
+    "Description": ""
+  },
+  {
+    "Reference": "D6",
+    "Value": "BZX85C33 / 1.3W",
+    "Footprint": "LoopIO:D_DO-41_SOD81_P10.16mm_Horizontal",
+    "Datasheet": "~",
+    "Description": ""
+  },
+  {
+    "Reference": "U7",
+    "Value": "LT3092EST#PBF",
+    "Footprint": "LoopIO:SOT-223-3_TabPin2",
+    "Datasheet": "https://www.analog.com/media/en/technical-documentation/data-sheets/lt3092.pdf",
+    "Description": ""
+  },
+  {
+    "Reference": "R20",
+    "Value": "30.1k / 0.1%",
+    "Footprint": "LoopIO:R_0805_2012Metric",
+    "Datasheet": "~",
+    "Description": ""
+  },
+  {
+    "Reference": "R21",
+    "Value": "10R / 0.1%",
+    "Footprint": "LoopIO:R_0805_2012Metric",
+    "Datasheet": "~",
+    "Description": ""
+  },
+  {
+    "Reference": "R22",
+    "Value": "100R / 0.01% / 10ppm",
+    "Footprint": "LoopIO:R_1206_3216Metric",
+    "Datasheet": "~",
+    "Description": ""
+  },
+  {
+    "Reference": "TP1",
+    "Value": "AI_SHUNT",
+    "Footprint": "LoopIO:TestPoint_Pad_D1.5mm",
+    "Datasheet": "~",
+    "Description": ""
+  },
+  {
+    "Reference": "R23",
+    "Value": "1k / 0.1%",
+    "Footprint": "LoopIO:R_0805_2012Metric",
+    "Datasheet": "~",
+    "Description": ""
+  },
+  {
+    "Reference": "U8",
+    "Value": "LM4040AIM3-3.0",
+    "Footprint": "LoopIO:SOT-23",
+    "Datasheet": "http://www.ti.com/lit/ds/symlink/lm4040-n.pdf",
+    "Description": ""
+  },
+  {
+    "Reference": "D7",
+    "Value": "BAT54W",
+    "Footprint": "LoopIO:D_SOD-123",
+    "Datasheet": "~",
+    "Description": ""
+  },
+  {
+    "Reference": "U9",
+    "Value": "TMUX1511PWR",
+    "Footprint": "LoopIO:TSSOP-14_4.4x5mm_P0.65mm",
+    "Datasheet": "https://www.ti.com/lit/ds/symlink/tmux1511.pdf",
+    "Description": ""
+  },
+  {
+    "Reference": "C15",
+    "Value": "100n / 16V",
+    "Footprint": "LoopIO:C_0805_2012Metric",
+    "Datasheet": "~",
+    "Description": ""
+  },
+  {
+    "Reference": "C16",
+    "Value": "100n / 16V",
+    "Footprint": "LoopIO:C_0805_2012Metric",
+    "Datasheet": "~",
+    "Description": ""
+  },
+  {
+    "Reference": "U10",
+    "Value": "ADS1115IDGSR",
+    "Footprint": "LoopIO:TSSOP-10_3x3mm_P0.5mm",
+    "Datasheet": "http://www.ti.com/lit/ds/symlink/ads1113.pdf",
+    "Description": ""
+  },
+  {
+    "Reference": "C17",
+    "Value": "100n / 16V",
+    "Footprint": "LoopIO:C_0805_2012Metric",
+    "Datasheet": "~",
+    "Description": ""
+  },
+  {
+    "Reference": "C18",
+    "Value": "1u / 16V",
+    "Footprint": "LoopIO:C_0805_2012Metric",
+    "Datasheet": "~",
+    "Description": ""
+  },
+  {
+    "Reference": "R24",
+    "Value": "10k",
+    "Footprint": "LoopIO:R_0805_2012Metric",
+    "Datasheet": "~",
+    "Description": ""
+  },
+  {
+    "Reference": "TP2",
+    "Value": "AI_ADC",
+    "Footprint": "LoopIO:TestPoint_Pad_D1.5mm",
+    "Datasheet": "~",
+    "Description": ""
+  },
+  {
+    "Reference": "U11",
+    "Value": "DAC80501ZDGSR",
+    "Footprint": "LoopIO:VSSOP-10_3x3mm_P0.5mm",
+    "Datasheet": "https://www.ti.com/lit/ds/symlink/dac80501.pdf",
+    "Description": ""
+  },
+  {
+    "Reference": "C19",
+    "Value": "100n / 16V",
+    "Footprint": "LoopIO:C_0805_2012Metric",
+    "Datasheet": "~",
+    "Description": ""
+  },
+  {
+    "Reference": "C20",
+    "Value": "1u / 16V",
+    "Footprint": "LoopIO:C_0805_2012Metric",
+    "Datasheet": "~",
+    "Description": ""
+  },
+  {
+    "Reference": "C21",
+    "Value": "100n / 16V",
+    "Footprint": "LoopIO:C_0805_2012Metric",
+    "Datasheet": "~",
+    "Description": ""
+  },
+  {
+    "Reference": "R25",
+    "Value": "1k",
+    "Footprint": "LoopIO:R_0805_2012Metric",
+    "Datasheet": "~",
+    "Description": ""
+  },
+  {
+    "Reference": "C22",
+    "Value": "1u / 16V",
+    "Footprint": "LoopIO:C_0805_2012Metric",
+    "Datasheet": "~",
+    "Description": ""
+  },
+  {
+    "Reference": "TP3",
+    "Value": "DAC_FILTER",
+    "Footprint": "LoopIO:TestPoint_Pad_D1.5mm",
+    "Datasheet": "~",
+    "Description": ""
+  },
+  {
+    "Reference": "U12",
+    "Value": "XTR111AIDGQR",
+    "Footprint": "LoopIO:MSOP-10-1EP_3x3mm_P0.5mm_EP2.2x3.1mm_Mask1.83x1.89mm_ThermalVias",
+    "Datasheet": "https://www.ti.com/lit/ds/symlink/xtr111.pdf",
+    "Description": ""
+  },
+  {
+    "Reference": "C23",
+    "Value": "100n / 50V",
+    "Footprint": "LoopIO:C_0805_2012Metric",
+    "Datasheet": "~",
+    "Description": ""
+  },
+  {
+    "Reference": "C24",
+    "Value": "1u / 16V",
+    "Footprint": "LoopIO:C_0805_2012Metric",
+    "Datasheet": "~",
+    "Description": ""
+  },
+  {
+    "Reference": "R26",
+    "Value": "1k / 0.01% / 10ppm",
+    "Footprint": "LoopIO:R_0805_2012Metric",
+    "Datasheet": "~",
+    "Description": ""
+  },
+  {
+    "Reference": "R27",
+    "Value": "10k",
+    "Footprint": "LoopIO:R_0805_2012Metric",
+    "Datasheet": "~",
+    "Description": ""
+  },
+  {
+    "Reference": "R28",
+    "Value": "10k",
+    "Footprint": "LoopIO:R_0805_2012Metric",
+    "Datasheet": "~",
+    "Description": ""
+  },
+  {
+    "Reference": "Q1",
+    "Value": "2N7002",
+    "Footprint": "LoopIO:SOT-23",
+    "Datasheet": "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF",
+    "Description": ""
+  },
+  {
+    "Reference": "Q2",
+    "Value": "2N7002",
+    "Footprint": "LoopIO:SOT-23",
+    "Datasheet": "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF",
+    "Description": ""
+  },
+  {
+    "Reference": "R29",
+    "Value": "100k",
+    "Footprint": "LoopIO:R_0805_2012Metric",
+    "Datasheet": "~",
+    "Description": ""
+  },
+  {
+    "Reference": "Q3",
+    "Value": "IRF9540NPBF",
+    "Footprint": "LoopIO:TO-220-3_Vertical",
+    "Datasheet": "http://www.irf.com/product-info/datasheets/data/irf9540n.pdf",
+    "Description": ""
+  },
+  {
+    "Reference": "R30",
+    "Value": "15R",
+    "Footprint": "LoopIO:R_0805_2012Metric",
+    "Datasheet": "~",
+    "Description": ""
+  },
+  {
+    "Reference": "Q4",
+    "Value": "MMBT3906",
+    "Footprint": "LoopIO:SOT-23",
+    "Datasheet": "https://www.onsemi.com/pdf/datasheet/pzt3906-d.pdf",
+    "Description": ""
+  },
+  {
+    "Reference": "R31",
+    "Value": "15R",
+    "Footprint": "LoopIO:R_0805_2012Metric",
+    "Datasheet": "~",
+    "Description": ""
+  },
+  {
+    "Reference": "C25",
+    "Value": "10n / 100V",
+    "Footprint": "LoopIO:C_0805_2012Metric",
+    "Datasheet": "~",
+    "Description": ""
+  },
+  {
+    "Reference": "D8",
+    "Value": "BAV21W",
+    "Footprint": "LoopIO:D_SOD-123",
+    "Datasheet": "~",
+    "Description": ""
+  },
+  {
+    "Reference": "D9",
+    "Value": "SMBJ33CA",
+    "Footprint": "LoopIO:D_SMB",
+    "Datasheet": "~",
+    "Description": ""
+  }
+]
