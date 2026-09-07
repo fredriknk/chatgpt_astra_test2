@@ -274,7 +274,7 @@ def build():
     un.update({'A5':'USB_CC1','B5':'USB_CC2'})
     mcu.add('J4',uc,345,95,un,'USB-C','Connector_USB:USB_C_Receptacle_HRO_TYPE-C-31-M-12')
     r(mcu,'R15',330,155,'5.1k / 1%','USB_CC1','GND');r(mcu,'R16',380,155,'5.1k / 1%','USB_CC2','GND')
-    mcu.add('U6',key('Power_Protection','USBLC6-2SC6'),350,205,{'1':'USB_DP','6':'USB_DP_ESD','3':'USB_DM','4':'USB_DM_ESD','5':'USB_VBUS','2':'GND'},'USBLC6-2SC6')
+    mcu.add('U6',key('Power_Protection','USBLC6-2SC6'),350,205,{'1':'USB_DM','6':'USB_DM_ESD','3':'USB_DP','4':'USB_DP_ESD','5':'USB_VBUS','2':'GND'},'USBLC6-2SC6')
     r(mcu,'R17',325,238,'22R','USB_DP_ESD','USB_DP_MCU');r(mcu,'R18',375,238,'22R','USB_DM_ESD','USB_DM_MCU')
 
     # Input: floating 30 mA limiter, independent clamp, powered-off switch.

@@ -1,0 +1,31 @@
+{
+  "DP": {
+    "connector_paths_mm": {
+      "A6": 14.04842712474619,
+      "B6": 14.04842712474619
+    },
+    "protected_path_mm": 17.044722215136417,
+    "resistor_to_module_mm": 3.1920815280171313,
+    "total_paths_mm": {
+      "A6": 34.28523086789974,
+      "B6": 34.28523086789974
+    }
+  },
+  "DM": {
+    "connector_paths_mm": {
+      "A7": 11.157996691512418,
+      "B7": 11.157996691512418
+    },
+    "protected_path_mm": 20.02330085889911,
+    "resistor_to_module_mm": 3.2045079348883236,
+    "total_paths_mm": {
+      "A7": 34.385805485299855,
+      "B7": 34.385805485299855
+    }
+  },
+  "orientation_skew_mm": {
+    "A": 0.1005746174001132,
+    "B": 0.1005746174001132
+  },
+  "measurement_note": "Geometric copper centreline paths, including 1.6 mm per through-board transition; excludes internal IC and resistor paths. Coordinates quantized to 0.01 mm."
+}

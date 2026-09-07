@@ -547,10 +547,10 @@
   "U6": {
     "sheet": "controller",
     "pins": {
-      "1": "USB_DP",
-      "6": "USB_DP_ESD",
-      "3": "USB_DM",
-      "4": "USB_DM_ESD",
+      "1": "USB_DM",
+      "6": "USB_DM_ESD",
+      "3": "USB_DP",
+      "4": "USB_DP_ESD",
       "5": "USB_VBUS",
       "2": "GND"
     },
