@@ -1,7 +1,7 @@
 {
     "$schema": "https://schemas.kicad.org/drc.v1.json",
     "coordinate_units": "mm",
-    "date": "2026-09-07T12:04:07+0200",
+    "date": "2026-09-07T12:10:16+0200",
     "kicad_version": "9.0.7",
     "schematic_parity": [],
     "source": "chatgpt_astra_test2.kicad_pcb",
@@ -1321,12 +1321,12 @@
             "description": "Missing connection between items",
             "items": [
                 {
-                    "description": "Track [/04 / PROTECTED CURRENT INPUT/AI_SHUNT] on F.Cu, length 1.3875 mm",
+                    "description": "Track [/04 / PROTECTED CURRENT INPUT/AI_SHUNT] on B.Cu, length 2.1000 mm",
                     "pos": {
-                        "x": 101.7,
+                        "x": 103.8,
                         "y": 97.0
                     },
-                    "uuid": "7a5f89aa-f7c2-4480-a594-2e98ddc85558"
+                    "uuid": "f59720ad-9ba0-4a22-844e-36870c8511da"
                 },
                 {
                     "description": "Pad 2 [/04 / PROTECTED CURRENT INPUT/AI_SHUNT] of R21 on F.Cu",
@@ -1413,12 +1413,12 @@
             "description": "Missing connection between items",
             "items": [
                 {
-                    "description": "Track [/05 / PRECISION CURRENT OUTPUT/DAC_FILTER] on F.Cu, length 1.4500 mm",
+                    "description": "Track [/05 / PRECISION CURRENT OUTPUT/DAC_FILTER] on F.Cu, length 1.5000 mm",
                     "pos": {
                         "x": 124.0,
-                        "y": 97.5
+                        "y": 96.0
                     },
-                    "uuid": "96203fe4-7628-4c77-a1a8-7f8928e50f1b"
+                    "uuid": "d6f2e765-350d-40b0-83a9-bb1377c4b57d"
                 },
                 {
                     "description": "Pad 6 [/05 / PRECISION CURRENT OUTPUT/DAC_FILTER] of U12 on F.Cu",
@@ -1674,12 +1674,12 @@
                     "uuid": "af2b740a-f24f-4771-83f2-411d0b196bf9"
                 },
                 {
-                    "description": "Pad 4 [/05 / PRECISION CURRENT OUTPUT/XTR_REG] of U12 on F.Cu",
+                    "description": "Track [/05 / PRECISION CURRENT OUTPUT/XTR_REG] on F.Cu, length 0.5000 mm",
                     "pos": {
                         "x": 125.85,
                         "y": 101.5
                     },
-                    "uuid": "92721ae1-bf9f-4da8-abae-37e272d87a9a"
+                    "uuid": "4d1032f3-84f4-4679-a545-431d00db51d9"
                 }
             ],
             "severity": "error",
@@ -3077,12 +3077,12 @@
                     "uuid": "c3bc6c98-6847-4da9-95f7-f771dd990d5c"
                 },
                 {
-                    "description": "Track [V24_PROT] on F.Cu, length 1.2700 mm",
+                    "description": "Pad 3 [V24_PROT] of U2 on F.Cu",
                     "pos": {
                         "x": 64.125,
-                        "y": 84.365
+                        "y": 85.635
                     },
-                    "uuid": "f73d69c8-f882-4276-a720-295feacf1b77"
+                    "uuid": "68686b38-0d72-496b-ad22-fde77165abac"
                 }
             ],
             "severity": "error",
@@ -3215,12 +3215,12 @@
                     "uuid": "d3052fc4-16c6-4713-8b8e-e8853f9fa196"
                 },
                 {
-                    "description": "Track [V3V3] on F.Cu, length 5.0000 mm",
+                    "description": "Track [V3V3] on F.Cu, length 2.5000 mm",
                     "pos": {
                         "x": 85.5,
-                        "y": 85.475
+                        "y": 90.475
                     },
-                    "uuid": "b8bbc750-6546-4bab-bea4-c6b0d01db65a"
+                    "uuid": "90a26b2c-8978-4184-ae83-eb713c5c9a05"
                 }
             ],
             "severity": "error",

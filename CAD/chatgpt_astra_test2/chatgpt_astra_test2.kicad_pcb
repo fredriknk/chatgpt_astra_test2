@@ -20321,7 +20321,7 @@
 		)
 	)
 	(gr_text "PWR   IN   GND"
-		(at 94 129 0)
+		(at 94 129.1 0)
 		(layer "F.SilkS")
 		(uuid "373833e0-51c4-42f2-a1ac-e1b45ee96e4f")
 		(effects
@@ -20376,7 +20376,7 @@
 		)
 	)
 	(gr_text "OUT   GND"
-		(at 133 129 0)
+		(at 133 129.1 0)
 		(layer "F.SilkS")
 		(uuid "89946917-0e3e-4817-93b6-90b4b5d99c55")
 		(effects
