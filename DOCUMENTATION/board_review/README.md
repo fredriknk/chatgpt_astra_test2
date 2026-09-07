@@ -1,6 +1,6 @@
 # PCB routing draft
 
-The schematic checkpoint is **26806e6**. The serviceable 100 x 80 mm placement checkpoint is **2561262**. The first routing pass is **73e48d3** and the second routing pass is **2b1e08d**. Explicit routing classes and fabrication constraints were restored and verified in **8d3c7f9**.
+The schematic checkpoint is **26806e6**. The serviceable 100 x 80 mm placement checkpoint is **2561262**. The first routing pass is **73e48d3** and the second routing pass is **2b1e08d**. Explicit routing classes and fabrication constraints were restored and verified in **8d3c7f9**. Bulk routing with protected manual traces is **7b6780f**; the current board adds a local D2 ground stitch.
 
 [Open the board](../../CAD/chatgpt_astra_test2/chatgpt_astra_test2.kicad_pcb) · [Top placement drawing](placement.svg) · [3D preview](board_3d.png)
 
@@ -18,9 +18,11 @@ The schematic checkpoint is **26806e6**. The serviceable 100 x 80 mm placement c
 
 This is a **partially routed board, not fabrication ready**. The first pass added 48 top-layer track segments for the buck input bypass, bootstrap, switch-to-inductor connection, output capacitor supply connections, VCC bypass, feedback resistor interconnect, and DAC reference/output filter. C4, C5 and C6 moved locally to improve buck routing.
 
-The second pass adds buck feedback on B.Cu, output-voltage sensing, 23 local ground stitching connections, a dedicated input-shunt sense takeoff, input clamp connections, and the XTR111 set-resistor connection. There are now **104 track segments and 29 vias**. KiCad reports **162 unconnected items**, down from 190 after pass one and 208 at placement.
+The second pass added buck feedback on B.Cu, output-voltage sensing, 23 local ground stitching connections, a dedicated input-shunt sense takeoff, input clamp connections, and the XTR111 set-resistor connection. Bulk routing then used the installed Freerouting 1.6.2 with the existing copper marked protected, project net classes exported, eight routing passes and single-thread optimization. The resulting board passed KiCad checks with 28 open connections. A local D2 ground stitch reduces this to **27 unconnected items**, down from 162 after pass two, 190 after pass one and 208 at placement.
 
-USB, power distribution, most controller connections, analog signal completion and additional ground/thermal connections remain required. The shunt ground and RSET ground connect to the continuous plane, but their full return-current environment still requires review after remaining routing. No completed functional block or controlled-impedance routing is claimed yet. [Current top copper drawing](routing.svg) and [bottom copper drawing](routing_bottom.svg). The placement and 3D images above show the earlier placement checkpoint.
+There are **620 track segments and 72 vias**: 537 segments on F.Cu, 63 on In2.Cu and 20 on B.Cu. In1.Cu contains no routed signal tracks and remains the ground-reference plane. Remaining connections include eFuse pin escapes, USB VBUS, XTR111 supply/control pins, DAC power/I2C, and ground connections. Thermal copper and current-return review are still required.
+
+**USB data routing is provisional and needs manual rework.** The autorouter connected the data nets individually, with unequal layer transitions and without differential-pair control. This is not a validated USB layout. The shunt ground and RSET ground connect to the plane, but their full return-current environment still requires review after remaining routing. No completed functional block or controlled-impedance routing is claimed yet. [Current top copper drawing](routing.svg) and [bottom copper drawing](routing_bottom.svg). The placement and 3D images above show the earlier placement checkpoint.
 
 The current DRC report has **zero geometry/rule violations** and **zero schematic parity issues**, with no exclusions introduced. This includes checking component courtyards, copper clearances, silkscreen and the schematic-to-board net assignments. The open connections are reported separately and remain required work. See [drc.json](drc.json).
 
