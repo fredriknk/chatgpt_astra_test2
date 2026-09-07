@@ -1,6 +1,6 @@
-# PCB placement draft
+# PCB routing draft
 
-The schematic checkpoint was committed as **26806e6** (`Add ESP32 24V current-loop prototype schematic`). The PCB work after that checkpoint is an uncommitted placement draft.
+The schematic checkpoint is **26806e6**. The serviceable 100 x 80 mm placement checkpoint is **2561262** (`Place serviceable 100x80mm four-layer ESP32 board`). The working board now contains the first manual routing pass.
 
 [Open the board](../../CAD/chatgpt_astra_test2/chatgpt_astra_test2.kicad_pcb) · [Top placement drawing](placement.svg) · [3D preview](board_3d.png)
 
@@ -16,7 +16,9 @@ The schematic checkpoint was committed as **26806e6** (`Add ESP32 24V current-lo
 
 ## Electrical layout state
 
-This is **placement, not a routed or fabrication-ready board**. KiCad reports **208 unconnected items** after filling the internal ground plane. No signal or power tracks have been routed yet.
+This is a **partially routed board, not fabrication ready**. The first pass adds **48 top-layer track segments** for the buck input bypass, bootstrap, switch-to-inductor connection, output capacitor supply connections, VCC bypass, feedback resistor interconnect, and DAC reference/output filter. C4, C5 and C6 moved locally to improve buck routing. KiCad reports **190 unconnected items**, down from 208 at placement.
+
+The buck feedback pin, power/ground return connections and stitching remain open. USB and precision Kelvin paths remain unrouted. No completed functional block or controlled-impedance routing is claimed yet. [Current top copper drawing](routing.svg). The placement and 3D images above show the earlier placement checkpoint.
 
 The current DRC report has **zero geometry/rule violations** and **zero schematic parity issues**, with no exclusions introduced. This includes checking component courtyards, copper clearances, silkscreen and the schematic-to-board net assignments. The open connections are reported separately and remain required work. See [drc.json](drc.json).
 
@@ -53,6 +55,8 @@ The circuit-level limits and fault/accuracy tests remain in the [schematic revie
 ## Reproduction
 
 [build_board.py](../../CODE/build_board.py) uses KiCad 9's bundled Python and the exported schematic XML netlist. It regenerates the board and project net classes, so preserve manual layout changes before running it. Its coordinate table is measured in millimetres from the upper-left corner of the base PCB.
+
+[start_routing.py](../../CODE/start_routing.py) applies this initial routing to an unrouted placement board using KiCad 9 Python. It refuses to overwrite existing tracks. Do not rerun the placement generator on the current board: it would discard routing. The placement JSON remains a record of the placement checkpoint; the PCB is authoritative for current positions.
 
 The source XML netlist is ignored by this repository's existing `.gitignore`. Regenerate it with `kicad-cli sch export netlist --format kicadxml` from the root schematic into `DOCUMENTATION/schematic_review/netlist.xml` before building in a fresh checkout.
 
