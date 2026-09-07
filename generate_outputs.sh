@@ -11,13 +11,13 @@ set -euo pipefail
 KICAD_BIN="/usr/bin"
 
 # Project *stem* (without extension), relative to repo root (this script's dir)
-PROJECT_DEFAULT="CAD/<proj_name>/<proj_name>"
+PROJECT_DEFAULT="CAD/chatgpt_astra_test2/chatgpt_astra_test2"
 
 # Vendor for KiKit fab (e.g., jlcpcb, pcbway). Leave empty to skip KiKit.
-VENDOR_DEFAULT="jlcpcb"
+VENDOR_DEFAULT=""
 
 # Base options for build_outputs.py
-BASE_OPTS=(--no-timestamp --iso --zip)
+BASE_OPTS=(--iso --zip)
 # ============================================================
 
 # --- Helpers ---

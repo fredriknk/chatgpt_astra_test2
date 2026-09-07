@@ -25,6 +25,7 @@ fp-info-cache
 *.dsn
 *.ses
 logs/freerouting.log
+__pycache__/
 
 # Exported BOM files
 *.xml

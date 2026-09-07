@@ -1,0 +1,24 @@
+{
+  "status": "PASS",
+  "erc_violations": 0,
+  "drc_violations": 0,
+  "unconnected_items": 0,
+  "schematic_parity_errors": 0,
+  "components": 93,
+  "pins_checked": 273,
+  "production_run": "PRODUCTION\\20260907_1316_chatgpt_astra_test2",
+  "zip_members": 16,
+  "usb_skew_mm": {
+    "A": 0.1005746174001132,
+    "B": 0.1005746174001132
+  },
+  "source_sha256": {
+    "CAD\\chatgpt_astra_test2\\analog_input.kicad_sch": "4288a4eb5accf871adc0738f585dbea12a322613d4e6c98b27e703fff2ec6c27",
+    "CAD\\chatgpt_astra_test2\\analog_output.kicad_sch": "2cecea6ad529702d2569c0ece1d4efbf1ceade6255b4f14569c0b652f33a653b",
+    "CAD\\chatgpt_astra_test2\\chatgpt_astra_test2.kicad_pcb": "0c8112c36be78272e30588d61f6a2adcf7b465042a4fd367f523b26ca37cc005",
+    "CAD\\chatgpt_astra_test2\\chatgpt_astra_test2.kicad_pro": "20c172f33a0d3112b76898f0bbc0c2c589d55cd191f1eadfc9eb15a8b7b51412",
+    "CAD\\chatgpt_astra_test2\\chatgpt_astra_test2.kicad_sch": "6446a601c7a7e0d2aa7a5bd2ac53eaa34e76a3829e73846e29fadaaff0ef7a7d",
+    "CAD\\chatgpt_astra_test2\\controller.kicad_sch": "a66cda9ac0e65271115f7b9ddca02400b863fd03c143aa6dc43e0559b00782fd",
+    "CAD\\chatgpt_astra_test2\\power.kicad_sch": "4d89f655006e41fd78f5f4faf23a41fcb9547aed3082e2516149a4f9f145e5ab"
+  }
+}

@@ -109,6 +109,7 @@ from string import Template
 from pathlib import Path
 import shutil
 import re
+import tempfile
 
 def clear_dir(path: Path):
     """
@@ -326,7 +327,7 @@ def export_pictures(kicad, pcb_path: Path, out_dir: Path, iso: bool):
         run([
             kicad, "pcb", "render", "-o", str(iso_out),
             "--background", "transparent", "--perspective",
-            "--rotate", "'-45,0,45'", "--zoom", "1", str(pcb_path)
+            "--rotate", "315,0,45", "--zoom", "1", str(pcb_path)
         ])
     return [top, bot, side] + ([iso_out] if iso_out else [])
 
@@ -338,27 +339,28 @@ def export_docs(kicad, sch_path: Path, pcb_path: Path, out_dir: Path, include_dr
 
     # ERC report
     erc_rpt = out_dir / f"{sch_path.stem}_erc.rpt"
-    run([kicad, "sch", "erc", "-o", str(erc_rpt), str(sch_path)])
+    run([kicad, "sch", "erc", "--exit-code-violations", "-o", str(erc_rpt), str(sch_path)])
 
     # Board prints PDF (multi-page: common layers)
     board_pdf = out_dir / f"{pcb_path.stem}_board_prints.pdf"
     layers = ",".join([
-        "F.Cu","B.Cu","F.SilkS","B.SilkS",
+        "F.Cu","In1.Cu","In2.Cu","B.Cu","F.SilkS","B.SilkS",
         "F.Mask","B.Mask","Edge.Cuts","F.Fab","B.Fab","User.Drawings"
     ])
-    run([
-        kicad, "pcb", "export", "pdf",
-        "-o", str(board_pdf),
-        "--layers", layers,
-        "--mode-multipage",
-        str(pcb_path)
-    ])
+    # KiCad's multipage mode treats -o as a directory, despite the generic help.
+    with tempfile.TemporaryDirectory(prefix="board_pdf_", dir=out_dir) as pdf_tmp:
+        run([
+            kicad, "pcb", "export", "pdf",
+            "-o", pdf_tmp, "--layers", layers,
+            "--mode-multipage", str(pcb_path)
+        ])
+        shutil.copyfile(Path(pdf_tmp) / f"{pcb_path.stem}.pdf", board_pdf)
 
     # Optional DRC (report lives with docs so it’s easy to review)
     drc_rpt = None
     if include_drc:
         drc_rpt = out_dir / f"{pcb_path.stem}_drc.rpt"
-        run([kicad, "pcb", "drc", "-o", str(drc_rpt), "--format", "report", str(pcb_path)])
+        run([kicad, "pcb", "drc", "--schematic-parity", "--exit-code-violations", "-o", str(drc_rpt), "--format", "report", str(pcb_path)])
 
     return sch_pdf, erc_rpt, board_pdf, drc_rpt
 
@@ -375,11 +377,13 @@ def export_fab(kicad, sch_path: Path, pcb_path: Path, out_dir: Path, zip_outputs
     gerb_dir = ensure_dir(root / "gerbers")
     drill_dir = ensure_dir(root / "drill")
 
-    # Gerbers: use saved board plot params for repeatability
-    run([kicad, "pcb", "export", "gerbers", "-o", str(gerb_dir), "--board-plot-params", str(pcb_path)])
+    # Explicit four-layer fabrication set; never omit an inner copper layer.
+    run([kicad, "pcb", "export", "gerbers", "-o", str(gerb_dir), "--layers",
+         "F.Cu,In1.Cu,In2.Cu,B.Cu,F.Paste,B.Paste,F.SilkS,B.SilkS,F.Mask,B.Mask,Edge.Cuts",
+         "--subtract-soldermask", str(pcb_path)])
 
     # Drill (Excellon) + map
-    run([kicad, "pcb", "export", "drill", "-o", str(drill_dir), "--format", "excellon", "--generate-map", str(pcb_path)])
+    run([kicad, "pcb", "export", "drill", "-o", str(drill_dir), "--format", "excellon", "--excellon-separate-th", "--generate-map", str(pcb_path)])
 
     # POS/PNP (CSV, both sides, mm)
     pos_csv = root / f"{pcb_path.stem}_pos.csv"
@@ -405,7 +409,11 @@ def export_fab(kicad, sch_path: Path, pcb_path: Path, out_dir: Path, zip_outputs
                 zip_path.unlink()
         except Exception:
             pass
-        zip_dir(gerb_dir, zip_path)
+        with zipfile.ZipFile(zip_path, 'w', zipfile.ZIP_DEFLATED) as archive:
+            for folder in (gerb_dir, drill_dir):
+                for artifact in folder.rglob('*'):
+                    if artifact.is_file():
+                        archive.write(artifact, artifact.relative_to(root))
 
     return gerb_dir, drill_dir, pos_csv, bom_csv, zip_path
 
